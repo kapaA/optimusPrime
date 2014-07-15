@@ -34,27 +34,9 @@ def set_eye_color(eye):
         GPIO.output(22, True) # BLUE
 
 def main():
-
     # initialization phase
     gpio_initializing()
     face_initializing()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
