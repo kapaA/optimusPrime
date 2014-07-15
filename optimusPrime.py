@@ -39,15 +39,16 @@ def set_eye_color(eye):
 
 def blink():
     while(1):
-        t = randint(2,5)
+        t = randint(3,15)
         time.sleep(t)
         GPIO.output(16, False) # RED
         GPIO.output(18, False) # GREEN
         GPIO.output(22, False) # BLUE
-        time.sleep(1)
+        t = randint(10,100)
+        t=t/100.0
+        time.sleep(t)
         set_eye_color(eye_color)
-        
-        print "blink"
+    
         
 def main():
     #initialization phase
