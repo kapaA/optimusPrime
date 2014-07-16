@@ -51,13 +51,15 @@ def blink():
     
 def moveMouth():
     
+    d=0.05
+    
     GPIO.output(7, False)
     GPIO.output(11, False)
     GPIO.output(13, False)
     GPIO.output(15, False)
     GPIO.output(12, False)
     
-    time.sleep(0.2)
+    time.sleep(d)
     
     GPIO.output(7, False)
     GPIO.output(11, False)
@@ -65,7 +67,7 @@ def moveMouth():
     GPIO.output(15, False)
     GPIO.output(12, False)
     
-    time.sleep(0.2)
+    time.sleep(d)
     
     GPIO.output(7, False)
     GPIO.output(11, True)
@@ -73,15 +75,31 @@ def moveMouth():
     GPIO.output(15, True)
     GPIO.output(12, False)
     
-    time.sleep(0.2)
+    time.sleep(d)
     
     GPIO.output(7, True)
     GPIO.output(11, True)
     GPIO.output(13, True)
     GPIO.output(15, True)
     GPIO.output(12, True)
+    
+    time.sleep(d)
+    
+    GPIO.output(7, False)
+    GPIO.output(11, True)
+    GPIO.output(13, True)
+    GPIO.output(15, True)
+    GPIO.output(12, False)
+    
+    time.sleep(d)
+    
+    GPIO.output(7, False)
+    GPIO.output(11, False)
+    GPIO.output(13, True)
+    GPIO.output(15, False)
+    GPIO.output(12, False)
 
-    time.sleep(0.2)    
+    time.sleep(d)    
     
     GPIO.output(7, False)
     GPIO.output(11, False)
